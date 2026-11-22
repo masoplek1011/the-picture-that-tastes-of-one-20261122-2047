@@ -194,7 +194,7 @@ for (let i = 0; i <= 26; i++) {
   const y = 430 + 190 * t + 10 * Math.sin(t * 6);
   lift.push([x, y]);
 }
-wavyLine(lift, 15, noodleCols[0], 1);
+wavyLine(lift, 17, noodleCols[0], 1);
 const lift2: Array<[number, number]> = [];
 for (let i = 0; i <= 22; i++) {
   const t = i / 22;
@@ -202,7 +202,7 @@ for (let i = 0; i <= 22; i++) {
   const y = 436 + 178 * t + 8 * Math.sin(t * 5 + 2);
   lift2.push([x, y]);
 }
-wavyLine(lift2, 12, noodleCols[2], 1);
+wavyLine(lift2, 14, noodleCols[2], 1);
 
 // 7. Steam — thin translucent curls above the bowl
 function steamCurl(cx: number, top: number, bottom: number, amp: number, w: number, a: number): void {
@@ -223,10 +223,10 @@ steamCurl(452, 260, 540, 20, 10, 0.05);
 steamCurl(576, 250, 540, 22, 10, 0.05);
 
 // 7b. Chopsticks — drawn last so they sit clearly on top of the steam
-thickLine(762, 118, 622, 428, 22, [38, 20, 10]);
-thickLine(802, 148, 656, 438, 22, [38, 20, 10]);
-thickLine(762, 118, 622, 428, 9, [150, 100, 55], 0.9);
-thickLine(802, 148, 656, 438, 9, [150, 100, 55], 0.9);
+thickLine(762, 118, 622, 428, 26, [38, 20, 10]);
+thickLine(802, 148, 656, 438, 26, [38, 20, 10]);
+thickLine(762, 118, 622, 428, 11, [150, 100, 55], 0.9);
+thickLine(802, 148, 656, 438, 11, [150, 100, 55], 0.9);
 
 // 8. Subtle grain on broth + bowl (deterministic), then vignette
 for (let i = 0; i < 9000; i++) {
